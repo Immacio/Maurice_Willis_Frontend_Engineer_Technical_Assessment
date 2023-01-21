@@ -67,8 +67,3 @@ yarn lint:fix
 - [TypeScript](https://www.typescriptlang.org/) - Open-source language which builds on JavaScript
 - [React Query](https://react-query.tanstack.com/) - Data fetching and caching library
 - [Redux Thunk](https://github.com/reduxjs/redux-thunk) - Redux state management middleware
-
-# 👨🏻‍🎨 Author
-
-- **Irvin Ives Lau** - [lauirvin](https://github.com/lauirvin)
-- https://www.irviniveslau.com
