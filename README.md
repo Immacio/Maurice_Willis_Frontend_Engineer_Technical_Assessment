@@ -4,7 +4,7 @@
   </a>
 </p>
 <h1 align="center">
-  ReactJS TypeScript Boilerplate
+  Necktie Frontend Take Home Assessment - Doctor Booking Page
 </h1>
 
 # 📚 Introduction
