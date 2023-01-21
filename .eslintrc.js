@@ -23,6 +23,7 @@ module.exports = {
     'operator-linebreak': 0,
     indent: 0,
     'default-param-last': 0,
+    'no-shadow': 'off',
     'implicit-arrow-linebreak': 0,
     '@typescript-eslint/explicit-module-boundary-types': 1,
     'object-curly-newline': 0, // Prettier handles this

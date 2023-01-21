@@ -4,15 +4,11 @@ import Config from '../Config';
 const instance = axios.create({
   baseURL: Config.baseUrl,
   timeout: 5000,
-  headers: { 'Content-Type': 'application/json' },
+  headers: {
+    'Content-Type': 'application/json',
+    Accept: 'application/json',
+    'x-api-key': Config.apiKey as string,
+  },
 });
-
-export const setToken = (token: string): void => {
-  instance.defaults.headers.common['x-access-token'] = token;
-};
-
-export const setLang = (lang: string): void => {
-  instance.defaults.headers.common['x-language'] = lang;
-};
 
 export default instance;

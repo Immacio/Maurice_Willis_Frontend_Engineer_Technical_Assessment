@@ -1,11 +1,4 @@
-import { useState, useEffect } from 'react';
-
-interface ReturnType {
-  innerHeight: number;
-  innerWidth: number;
-  outerHeight: number;
-  outerWidth: number;
-}
+import { useEffect, useState } from 'react';
 
 const getSize = () => ({
   innerHeight: window.innerHeight,
@@ -14,12 +7,14 @@ const getSize = () => ({
   outerWidth: window.outerWidth,
 });
 
-const useWindowSize = (): ReturnType => {
+const useWindowSize = (): ReturnType<typeof getSize> => {
   const [windowSize, setWindowSize] = useState(getSize());
 
-  useEffect(() => {
-    const handleResize = () => setWindowSize(getSize());
+  function handleResize() {
+    setWindowSize(getSize());
+  }
 
+  useEffect(() => {
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
