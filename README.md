@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/lauirvin/reactjs-typescript-boilerplate">
-    <img alt="logo" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" width="150" />
+    <img alt="logo" src="https://www.bowtie.com.hk/assets/favicon.png" width="150" />
   </a>
 </p>
 <h1 align="center">
