@@ -1,10 +1,12 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from '../pages/Home';
+import { Bookings } from '../pages/Bookings';
+import { AvailableDoctors } from '../pages/AvailableDoctors';
 
 const Router = (): JSX.Element => (
   <BrowserRouter>
     <Routes>
-      <Route index element={<Home />} />
+      <Route index element={<AvailableDoctors />} />
+      <Route path="/bookings" element={<Bookings />} />
     </Routes>
   </BrowserRouter>
 );

@@ -1,0 +1,19 @@
+@import '../../styles/colors';
+
+.layout {
+  &OuterContainer {
+    background-color: $White;
+    height: 100vh;
+  }
+
+  &InnerContainer {
+    display: flex;
+  }
+}
+
+.primaryContentContainer {
+  width: 100%;
+  overflow: auto;
+  padding: 3rem;
+  padding-left: 33rem;
+}

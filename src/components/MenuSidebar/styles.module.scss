@@ -1,0 +1,54 @@
+@import '../../styles/colors';
+
+.sidebar {
+  background-color: $White;
+  height: 100vh;
+  width: 30rem !important;
+  position: fixed !important;
+  min-width: 30rem !important;
+}
+
+.menuContainer {
+  padding: 2rem 0;
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1.6rem;
+}
+
+.logoContainer {
+  padding: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+
+  img {
+    height: 13rem;
+    object-fit: contain;
+  }
+
+  h3 {
+    text-align: center;
+    margin-block: 0;
+    font-size: 2rem;
+  }
+}
+
+.divider {
+  background-color: gray;
+  height: 0.1rem;
+  opacity: 0.5;
+}
+
+// Modifiers
+.selectedMenuItem {
+  background-color: #f3f3f3;
+}
