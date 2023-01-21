@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="logo" src="[https://www.bowtie.com.hk/assets/favicon.png](https://i.pinimg.com/736x/b7/20/7a/b7207af2e6078e81ce7ab484db59b0cf.jpg)" width="150" />
+    <img alt="logo" src="https://i.pinimg.com/736x/b7/20/7a/b7207af2e6078e81ce7ab484db59b0cf.jpg" width="150" />
 </p>
 <h1 align="center">
   Necktie Frontend Take Home Assessment - Doctor Booking Page
