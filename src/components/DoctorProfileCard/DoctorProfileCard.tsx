@@ -1,8 +1,7 @@
 /* eslint-disable react/jsx-one-expression-per-line */
-import { memo } from 'react';
+import { memo, useState } from 'react';
 import doctorPlaceholder from '../../assets/images/doctorPlaceholderImage.jpg';
 import { IDoctor } from '../../types';
-import convertFloatToTime from '../../utils/convertFloatToTime';
 import { CTAButton } from '../CTAButton';
 import styles from './styles.module.scss';
 
@@ -12,6 +11,7 @@ interface IDoctorProfileCardProps extends IDoctor {
 
 export const DoctorProfileCard = memo<Partial<IDoctorProfileCardProps>>(
   ({ address, name, opening_hours: openingHours, id: doctorId }) => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
     const { district, line_1: line1, line_2: line2 } = address || {};
 
     return (
