@@ -1,9 +1,3 @@
-import { PrimaryLayout } from '../../layouts';
-
-const Home = (): JSX.Element => (
-  <PrimaryLayout>
-    <span>Bookings</span>
-  </PrimaryLayout>
-);
+const Home = (): JSX.Element => <span>Bookings</span>;
 
 export default Home;

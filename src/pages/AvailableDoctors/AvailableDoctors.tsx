@@ -1,9 +1,3 @@
-import { PrimaryLayout } from '../../layouts';
-
-const AvailableDoctors = (): JSX.Element => (
-  <PrimaryLayout>
-    <span>Doctors</span>
-  </PrimaryLayout>
-);
+const AvailableDoctors = (): JSX.Element => <span>Doctors</span>;
 
 export default AvailableDoctors;
