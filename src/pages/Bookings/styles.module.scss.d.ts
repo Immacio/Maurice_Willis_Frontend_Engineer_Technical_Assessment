@@ -1,7 +1,7 @@
 export type Styles = {
   bookingsContainer: string;
-  container: string;
   titleHeader: string;
+  wrapper: string;
 };
 
 export type ClassNames = keyof Styles;

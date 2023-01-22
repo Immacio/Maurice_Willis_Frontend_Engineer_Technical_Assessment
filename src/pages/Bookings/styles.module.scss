@@ -1,7 +1,8 @@
 @import '../../styles/colors';
 
-.container {
-  background-color: $Black;
+.wrapper {
+  max-width: 162rem;
+  margin: 0 auto;
 }
 
 .titleHeader {

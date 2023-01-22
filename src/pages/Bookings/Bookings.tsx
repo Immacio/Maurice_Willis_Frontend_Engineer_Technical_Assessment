@@ -11,7 +11,7 @@ const Home = (): JSX.Element => {
   } = useFetchBookingsList();
 
   return (
-    <div>
+    <div className={styles.wrapper}>
       <div className={styles.titleHeader}>
         <AccessTime />
         Your Bookings ({bookings.length})

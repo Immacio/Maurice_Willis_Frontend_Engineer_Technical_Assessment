@@ -1,0 +1,59 @@
+@import '../../styles/colors';
+
+.container {
+  border-radius: 0.8rem;
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  min-width: 35rem;
+  width: fit-content;
+  padding: 2rem;
+  background-color: $White;
+  box-shadow: 0 0.3rem 0.6rem $DropshadowColor;
+
+  .doctorImage {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .doctorProfileContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+
+    .doctorImage {
+      width: 10rem;
+      height: 10rem;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    h2 {
+      font-size: 2.4rem;
+      margin-block: 0;
+    }
+  }
+
+  .addressContainer {
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+
+    h2 {
+      margin-block: 0;
+      font-size: 1.8rem;
+    }
+
+    span {
+      font-size: 1.4rem;
+    }
+  }
+
+  .ctaButton {
+    background-color: #3f50b5 !important;
+  }
+}
