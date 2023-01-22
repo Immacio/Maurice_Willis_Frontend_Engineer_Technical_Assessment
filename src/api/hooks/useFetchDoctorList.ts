@@ -10,6 +10,9 @@ export const useFetchDoctorList = (): {
   const query = useQuery('useFetchDoctorList', () => fetchDoctorList(), {
     onSuccess: (res: IDoctor[]) => res,
     onError: (err: unknown) => err,
+    staleTime: 10 * 1000,
+    refetchOnMount: true,
+    refetchOnWindowFocus: true,
   });
 
   const doctors = useMemo(() => query.data || ([] as IDoctor[]), [query.data]);

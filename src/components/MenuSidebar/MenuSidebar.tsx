@@ -10,7 +10,7 @@ interface Props {
   foo?: string;
 }
 
-export const MenuSidebar = memo<Props>(({ foo }) => {
+export const MenuSidebar = memo<Props>(() => {
   const location = useLocation();
 
   return (

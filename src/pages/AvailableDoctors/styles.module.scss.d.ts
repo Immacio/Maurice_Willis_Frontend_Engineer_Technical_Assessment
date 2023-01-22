@@ -1,5 +1,6 @@
 export type Styles = {
   container: string;
+  titleHeader: string;
 };
 
 export type ClassNames = keyof Styles;

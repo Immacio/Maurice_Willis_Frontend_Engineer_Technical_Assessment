@@ -12,6 +12,8 @@ export const useFetchIndividualDoctor = (
   const query = useQuery(['useFetchIndividualDoctor', id], () => fetchIndividualDoctor(id), {
     onSuccess: (res: IDoctor) => res,
     onError: (err: unknown) => err,
+    staleTime: Infinity,
+    cacheTime: Infinity,
   });
 
   const doctor = useMemo(() => query.data || ({} as IDoctor), [query.data]);

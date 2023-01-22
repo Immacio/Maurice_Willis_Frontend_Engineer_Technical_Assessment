@@ -1,7 +1,10 @@
 export type Styles = {
-  bookingsContainer: string;
+  clipLoader: string;
   container: string;
-  titleHeader: string;
+  containerOuter: string;
+  label: string;
+  modInvert: string;
+  wrapper: string;
 };
 
 export type ClassNames = keyof Styles;

@@ -1,0 +1,46 @@
+@import '../../styles/colors';
+
+.container {
+  border-radius: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: $White;
+  box-shadow: 0 0.3rem 0.6rem $DropshadowColor;
+
+  .innerContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  span {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-block: 0;
+  }
+
+  .infoContainers {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    div {
+      display: flex;
+      align-items: center;
+
+      svg {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  .ctaButton {
+    min-width: 15rem;
+  }
+}

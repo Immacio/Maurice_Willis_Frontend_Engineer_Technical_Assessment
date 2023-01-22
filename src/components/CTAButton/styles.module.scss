@@ -1,0 +1,54 @@
+@import '../../styles/colors';
+
+.wrapper {
+  display: flex;
+
+  button {
+    border-radius: 0.8rem;
+
+    &:last-of-type {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.container {
+  background-color: red;
+  border-radius: 0.4rem;
+  color: $White;
+  height: 4.8rem;
+  min-height: 4.8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &.modInvert {
+    background-color: $White !important;
+  }
+
+  .label {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.6rem;
+  }
+
+  .clipLoader {
+    display: flex;
+    justify-content: center;
+  }
+
+  &Outer {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+
+    svg {
+      padding-right: 16px;
+    }
+
+    button {
+      padding: 0;
+    }
+  }
+}

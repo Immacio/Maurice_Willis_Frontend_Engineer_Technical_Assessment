@@ -1,2 +1,2 @@
-export { default as Sidebar } from './MenuSidebar';
+export { default as MenuSidebar } from './MenuSidebar';
 export * from './MenuSidebar';
