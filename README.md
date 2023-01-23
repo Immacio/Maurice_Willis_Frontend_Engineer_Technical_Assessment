@@ -9,6 +9,12 @@
 1. There seems to be a bug in the back-end API servicem, where every doctor is open everyday (even weekends). However, when submitting an appointment booking for any day during the weekend, the API will return an error saying 'invalid booking' even though the GET request shows that the doctor is open during weekends. 
 2. If you want to run the repo locally, ensure you have a .env file with the environment variables slotted in. You can find the names of these variables in the Config.ts file. 
 
+# Choice of Framework
+
+## ReactJS
+
+I chose this framework because firstly I am most familiar with React, but also for any small-scale or large-scale project React is easy to setup and generally easy to maintain/read due to it's component-based structure.
+
 # Choice of Packages
 
 ## React-Query
