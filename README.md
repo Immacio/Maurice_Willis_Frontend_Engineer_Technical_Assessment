@@ -5,6 +5,10 @@
   Necktie Frontend Take Home Assessment - Doctor Booking Page
 </h1>
 
+# Link to project
+
+## https://necktie-frontend-take-home.vercel.app/
+
 # Important notes
 1. There seems to be a bug in the back-end API servicem, where every doctor is open everyday (even weekends). However, when submitting an appointment booking for any day during the weekend, the API will return an error saying 'invalid booking' even though the GET request shows that the doctor is open during weekends. 
 2. If you want to run the repo locally, ensure you have a .env file with the environment variables slotted in. You can find the names of these variables in the Config.ts file. 
