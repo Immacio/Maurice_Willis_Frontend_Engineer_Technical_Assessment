@@ -5,6 +5,10 @@
   Necktie Frontend Take Home Assessment - Doctor Booking Page
 </h1>
 
+# Important notes
+1. There seems to be a bug in the back-end API servicem, where every doctor is open everyday (even weekends). However, when submitting an appointment booking for any day during the weekend, the API will return an error saying 'invalid booking' even though the GET request shows that the doctor is open during weekends. 
+2. If you want to run the repo locally, ensure you have a .env file with the environment variables slotted in. You can find the names of these variables in the Config.ts file. 
+
 # Choice of Packages
 
 ## React-Query
@@ -28,7 +32,24 @@ Simple library used to make all my API calls to the BE server, it allows you to 
 
 # Potential Improvement
 
-1. Hello
-2. Heassda
+1. Create separate components for the stepped booking process within the <BookingModal /> page to reduce the lines of code on page, and improve readability. 
+2. Better error handling when the API fails, instead of using a default browser alert (e.g. visual cues in the UI telling the user which fields they may have left empty)
+3. Clean up the CSS for readability and maintainability. 
+4. Improvements to the UX/UI design, in particular the your bookings page. Design isn't very user-friendly and easy to read for the booking card + there is currently no sorting/filtering for the user on that page. Thus, all the bookings are just displayed in a random order. 
+5. Responsive mobile design
+
+# Production Consideration
+
+1. Should ensure that all API keys or end-points are safely stored in an .env variable, best to upload this to your domain host so that it is encrypted. 
+2. Remove unused packages or CSS to reduce the initial JS bundle size for users, this should improve loading times. 
+
+# Assumptions
+
+## Data model & API schema
+
+As of right now, the user is only limited to creating a booking appointment 1 week from the user's current day. This can be seen in the from the booking appointment page.
+
+In addition, all appointments are 1 hour long each, and the first and last appointment for each doctor can be booked in the initial opening hour and closing hour. (e.g. 9:00AM, 10:00AM are the available time-slots)
+
 
 <br/>
