@@ -26,6 +26,9 @@ Using TypeScript allowed me to create a more type-safe project, thus reducing th
 ## axios
 Simple library used to make all my API calls to the BE server, it allows you to also setup a configuration from your FE and in my use-case, it was where I passed in the x-api-key into the headers before an API call was made. 
 
+# Potential Improvement
 
+1. Hello
+2. Heassda
 
 <br/>
