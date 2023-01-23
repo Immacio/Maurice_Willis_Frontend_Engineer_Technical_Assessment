@@ -16,6 +16,7 @@
     "@types/react-dom": "^17.0.9",
     "axios": "^0.25.0",
     "classnames": "^2.3.1",
+    "dayjs": "^1.11.7",
     "husky": "^4.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -60,6 +61,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-modal": "^3.13.1",
     "@typescript-eslint/eslint-plugin": "^5.10.2",
     "@typescript-eslint/parser": "^5.10.2",
     "eslint": "^8.8.0",

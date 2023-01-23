@@ -5,7 +5,7 @@ import { DoctorProfileCard } from '../../components';
 import styles from './styles.module.scss';
 
 const AvailableDoctors = (): JSX.Element => {
-  const { query, doctors } = useFetchDoctorList();
+  const { doctors } = useFetchDoctorList();
 
   return (
     <div className={styles.wrapper}>
@@ -15,7 +15,13 @@ const AvailableDoctors = (): JSX.Element => {
       </div>
       <div className={styles.doctorContainer}>
         {doctors.map(({ id, name, address, opening_hours: openingHours }) => (
-          <DoctorProfileCard key={id} name={name} address={address} opening_hours={openingHours} />
+          <DoctorProfileCard
+            key={id}
+            name={name}
+            address={address}
+            opening_hours={openingHours}
+            id={id}
+          />
         ))}
       </div>
     </div>
