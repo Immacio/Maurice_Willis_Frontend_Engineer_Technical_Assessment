@@ -46,7 +46,8 @@ Simple library used to make all my API calls to the BE server, it allows you to 
 2. Better error handling when the API fails, instead of using a default browser alert (e.g. visual cues in the UI telling the user which fields they may have left empty)
 3. Clean up the CSS for readability and maintainability. 
 4. Improvements to the UX/UI design, in particular the your bookings page. Design isn't very user-friendly and easy to read for the booking card + there is currently no sorting/filtering for the user on that page. Thus, all the bookings are just displayed in a random order. 
-5. Responsive mobile design
+5. Loading skeletons for components, while they are fetching or re-fetching from the API.
+6. Responsive mobile design
 
 # Production Consideration
 
