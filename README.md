@@ -7,7 +7,7 @@
 
 # Link to project
 
-## https://necktie-frontend-take-home.vercel.app/
+https://necktie-frontend-take-home.vercel.app/
 
 # Important notes
 1. There seems to be a bug in the back-end API servicem, where every doctor is open everyday (even weekends). However, when submitting an appointment booking for any day during the weekend, the API will return an error saying 'invalid booking' even though the GET request shows that the doctor is open during weekends. 
