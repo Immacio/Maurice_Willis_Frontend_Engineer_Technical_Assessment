@@ -6,9 +6,11 @@
   background-color: $LightGrayNoOpacity;
   overflow: auto;
   outline: none;
-  padding: 20px;
-  min-height: 750px;
-  min-width: 650px;
+  padding: 2rem;
+  min-height: 75rem;
+  max-height: 75rem;
+  min-width: 65rem;
+  max-width: 65rem;
 }
 
 .modalOverlay {
@@ -56,7 +58,7 @@
   }
 }
 
-.availabilityContainer {
+.infoContainer {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -133,9 +135,73 @@
   }
 }
 
+.step1Wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeSlotsContainer {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+  justify-content: center;
+
+  .timeSlot {
+    border-radius: 5rem;
+    min-width: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    background-color: $White;
+    border: 0.1rem solid $Black;
+
+    span {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.successContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  h2 {
+    font-size: 2.4rem;
+    margin-block: 0;
+    margin-bottom: 5rem;
+  }
+
+  img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+  }
+}
+
+.ctaButton {
+  width: 100%;
+}
+
 // Modifier classes
 .mod {
   &SelectedDate {
     background-color: rgb(227, 227, 227) !important;
+  }
+
+  &BlockedDate {
+    background-color: $LightGray !important;
+    cursor: not-allowed;
+  }
+
+  &PaddingTop {
+    margin-top: 5rem;
   }
 }

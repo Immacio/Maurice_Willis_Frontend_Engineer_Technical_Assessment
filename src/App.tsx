@@ -4,10 +4,8 @@ import { ReactQueryDevtools } from 'react-query/devtools';
 import Config from './Config';
 import Router from './router';
 
-const queryClient = new QueryClient();
-
 const App = (): JSX.Element => (
-  <QueryClientProvider client={queryClient}>
+  <QueryClientProvider client={new QueryClient()}>
     <ProSidebarProvider>
       <Router />
       {Config.nodeEnv === 'development' ? <ReactQueryDevtools initialIsOpen={false} /> : ''}
